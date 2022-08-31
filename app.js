@@ -1,4 +1,6 @@
 const operator = ['+', '-', '*', '/'];
+
+// Add numbers to panel
 const clickNum = (clicked_data) => {
     let output_panel = document.getElementById('output').textContent;
     if (operator.includes(output_panel.slice(-1)) && operator.includes(clicked_data)) {
@@ -8,15 +10,18 @@ const clickNum = (clicked_data) => {
     }
 }
 
+// To clear panel
 const allClear = () => {
     document.getElementById('output').innerHTML = "";
 }
 
+// Remove last character from panel 
 const entryClear = () => {
     let output_panel = document.getElementById('output').textContent;
     document.getElementById('output').innerHTML = output_panel.slice(0, -1);
 }
 
+// Count the number of times a character appears in a string
 const calculate = () => {
     let output_panel = document.getElementById('output').textContent;
     document.getElementById('output').innerHTML = eval(output_panel);
