@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="screen-output">
+            <span id="output"> </span>
+        </div>
+        <div class="screen-numbers">
+            <button class="btn" id="ac"  onclick="allClear()" data-type="AC">AC</button>
+            <button class="btn" id="ce"  onclick="entryClear()" data-type="CE">CE</button>
+            <button class="btn" id="divide"  onclick="clickNum(this.getAttribute('data-type'))" data-type="/">/</button>
+            <button class="btn" id="multiply"  onclick="clickNum(this.getAttribute('data-type'))" data-type="*">*</button>
+            <button class="btn" id="7"  onclick="clickNum(this.getAttribute('data-type'))" data-type="7">7</button>
+            <button class="btn" id="8"  onclick="clickNum(this.getAttribute('data-type'))" data-type="8">8</button>
+            <button class="btn" id="9"  onclick="clickNum(this.getAttribute('data-type'))" data-type="9">9</button>
+            <button class="btn" id="minus"  onclick="clickNum(this.getAttribute('data-type'))" data-type="-">-</button>
+            <button class="btn" id="4" onclick="clickNum(this.getAttribute('data-type'))" data-type="4">4</button>
+            <button class="btn" id="5" onclick="clickNum(this.getAttribute('data-type'))" data-type="5">5</button>
+            <button class="btn" id="6" onclick="clickNum(this.getAttribute('data-type'))" data-type="6">6</button>
+            <button class="btn" id="plus"  onclick="clickNum(this.getAttribute('data-type'))" data-type="+">+</button>
+            <button class="btn" id="1"  onclick="clickNum(this.getAttribute('data-type'))" data-type="1">1</button>
+            <button class="btn" id="2"  onclick="clickNum(this.getAttribute('data-type'))" data-type="2">2</button>
+            <button class="btn" id="3"  onclick="clickNum(this.getAttribute('data-type'))" data-type="3">3</button>
+            <button class="btn" id="equals"  onclick="calculate()" data-type="=">=</button>
+            <button class="btn" id="0"  onclick="clickNum(this.getAttribute('data-type'))" data-type="0">0</button>
+            <button class="btn" id="dot"  onclick="clickNum(this.getAttribute('data-type'))" data-type=".">.</button>
+        </div>
+    </div>
+</body>
+</html>
